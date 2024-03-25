@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+   
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+    --fw1:600;
+    --fw2:700;
+    --fw3:880;
+    
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img
+{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+body{
+    background-color: #141414;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}   
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+ 
+   
+}
+.card{
+    background-color: rgb(31,31,31);
+    padding: 1em;
+    width: 100%;
+    max-width: 385px;
+    border-radius: 1em;
+    padding-bottom: 3em;
+}
+.round_img{
+  border-radius: 50%;
+  max-width: 30%;
+  margin-top: 3em;
+
+}
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+}
+h1{
+    color: var(--White);
+    font-weight: 600;
+}
+.sub_heading{
+    color: var(--Green);
+    font-size: 1em;
+}
+.quote{
+    margin: 1em;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+
+
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1em;
+   margin-top: 1.5em;
+}
+a{
+    color: white;
+    background-color: rgb(51,51,51);
+    width: 100%;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 14px ;
+    border-radius: 8px;
+
+}
+li:hover,a:hover{
+    background-color: var(--Green);
+    color:  rgb(31,31,31);
+    cursor: pointer;
+
+}
+.attribution{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 800;
+
+}
+.mango{
+    padding: 10px;
+    background-color: aqua;
+
+}
+
+@media(max-width:480px){
+    .attribution{
+        display: none;
+    }
+}
